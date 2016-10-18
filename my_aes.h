@@ -1,0 +1,24 @@
+typedef unsigned char byte;
+
+void xor(byte *a, byte *b, int i);
+void sub_bytes_one(byte a[4][4]);
+void sub_bytes_two(byte *a, int i);
+void key_core(byte *a, int i);
+void key_exp128(const byte *a, byte *b);
+void key_exp192(const byte *a, byte *b);
+void key_exp256(const byte *a, byte *b);
+void shift_rows(byte a[4][4]);
+void mix_cols(byte a[4][4]);
+void add_round_key(byte a[4][4], byte *b);
+void copy(byte a[4][4], byte b[4][4]);
+void encrypt_128(byte a[4][4], const byte *key, byte b[4][4]);
+void encrypt_192(byte a[4][4], const byte *key, byte b[4][4]);
+void encrypt_256(byte a[4][4], const byte *key, byte b[4][4]);
+void add_round_key_inv(byte a[4][4], byte *b);
+void mix_cols_inv(byte a[4][4]);
+void shift_rows_inv(byte a[4][4]);
+void sub_bytes_inv(byte a[4][4]);
+void decrypt_128(byte a[4][4], const byte *key, byte b[4][4]);
+void decrypt_192(byte a[4][4], const byte *key, byte b[4][4]);
+void decrypt_256(byte a[4][4], const byte *key, byte b[4][4]);
+void set(byte a[4][4]);
