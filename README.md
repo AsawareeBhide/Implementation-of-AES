@@ -1,5 +1,3 @@
-# aes-128
+# Implementation-of-AES
 
 TITLE : Implementation of Advanced Encryption Standard (AES)
-Features :
-1. Encryption and decryption of files using AES128(uses 128 bit key), AES192(uses 192 bit key) and AES256(uses 256 bit key) 
